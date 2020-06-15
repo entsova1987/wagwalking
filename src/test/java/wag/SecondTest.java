@@ -26,16 +26,11 @@ public class SecondTest extends BaseTest{
 
         fields.get(1).sendKeys("ABC123");
 
-        fields.get(2).sendKeys("Elena");
+        fields.get(2).sendKeys("Anna");
 
         fields.get(3).sendKeys("Entsova");
 
         fields.get(4).sendKeys("7028869393");
-
-
-
-
-
     }
 
 

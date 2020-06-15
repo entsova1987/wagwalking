@@ -53,16 +53,5 @@ public class ThirdTest extends BaseTest{
         Assert.assertEquals(expectedResult, lastNameError);
 
         Assert.assertEquals(expectedResult, phoneError);
-
-
-
-
-
-
-
-
-
-
-
     }
 }
