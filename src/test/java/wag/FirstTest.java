@@ -38,12 +38,11 @@ public class FirstTest extends BaseTest {
 
         WebElement phoneField = driver.findElement(By.cssSelector("input[name=\"phone\"]"));
 
-        phoneField.sendKeys("702-886-9393");
+        phoneField.sendKeys("702-886-9000");
+
+//        some changes
 
 //        new test
-//        new method
-
-        driver.quit();
     }
 
 
