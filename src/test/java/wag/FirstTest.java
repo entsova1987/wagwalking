@@ -40,13 +40,10 @@ public class FirstTest extends BaseTest {
 
         phoneField.sendKeys("702-886-9393");
 
+//        new test
+//        new method
 
-
-
-
-//        driver.quit();
-
-
+        driver.quit();
     }
 
 
