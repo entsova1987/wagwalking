@@ -1,4 +1,4 @@
-package wag;
+package wag.basicTest;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -6,8 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import wag.BaseTest;
 
-public class ForthTest extends BaseTest{
+public class ForthTest extends BaseTest {
 
     @Test
     public void testForth() throws InterruptedException {
