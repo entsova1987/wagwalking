@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+
 public class ApplyPage extends BasePage {
 
     public ApplyPage(WebDriver driver) {
@@ -25,6 +27,10 @@ public class ApplyPage extends BasePage {
 
     @FindBy(css = "input[name=\"phone\"]")
     private WebElement cellPhoneField;
+
+    @FindBy(css = ".sc-bdVaJa.sc-bxivhb.laYMsi")
+    private List<WebElement> requiredFields;
+
 
 
 
@@ -49,6 +55,43 @@ public class ApplyPage extends BasePage {
     public void inputCellPhoneField() {
         cellPhoneField.sendKeys("123-456-7890");
     }
+
+
+    public void clickEmailField() {
+        emailField.click();
+    }
+
+    public void clickPasswordField() {
+        passwordField.click();
+    }
+
+    public void clickFirstNameField() {
+        firstNameField.click();
+    }
+
+    public void clickLastNameField() {
+        lastNameField.click();
+    }
+
+    public void clickCellPhoneField() {
+        cellPhoneField.click();
+    }
+
+    public String getRequiredEmail() {
+        String result = requiredFields.get(0).getText();
+        return result;
+    }
+
+    public String getFirstNameError() {
+        String result = requiredFields.get(1).getText();
+        return result;
+    }
+
+
+
+
+
+
 
 
 
