@@ -87,6 +87,16 @@ public class ApplyPage extends BasePage {
         return result;
     }
 
+    public String getLastNameError() {
+        String result = requiredFields.get(2).getText();
+        return result;
+    }
+
+    public String getCellPhoneError() {
+        String result = requiredFields.get(3).getText();
+        return result;
+    }
+
 
 
 

@@ -35,6 +35,14 @@ public class RequiredFieldTest extends BaseTest {
         String firstNameError = applyPage.getFirstNameError();
 
         Assert.assertEquals("required", firstNameError);
+
+        String lastNameError = applyPage.getLastNameError();
+
+        Assert.assertEquals("required", lastNameError);
+
+        String cellPhoneError = applyPage.getCellPhoneError();
+
+        Assert.assertEquals("required", cellPhoneError);
     }
 
 
