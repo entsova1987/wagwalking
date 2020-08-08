@@ -9,6 +9,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class BaseTest {
 
     protected static WebDriver driver;
+    protected static User user;
+    protected static User invalidUser;
 
     @BeforeClass
     public static void setUp() {
@@ -27,6 +29,10 @@ public class BaseTest {
 
         Assert.assertEquals(expetedTitle, actualTitle);
 
+        user = new User("entsova@gmail.com", "ABC123", "Sarah", "Smith",
+                "123-456-7890");
+
+        invalidUser = new User("123456", "mjiuig", "Ika", "Jr", "000-000-9999");
     }
 
     @AfterClass
@@ -36,8 +42,4 @@ public class BaseTest {
 
         driver.quit();
     }
-
-
-
-
 }

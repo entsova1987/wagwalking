@@ -13,26 +13,14 @@ public class BookWalkTest extends BaseTest {
 
         ApplyPage applyPage = new ApplyPage(driver);
 
-        applyPage.inputEmail();
+        applyPage.inputEmail(user.getEmail());
 
-        applyPage.inputPassword();
+        applyPage.inputPassword(user.getPassword());
 
-        applyPage.inputFirstName();
+        applyPage.inputFirstName(user.getFirstName());
 
-        applyPage.inputLasName();
+        applyPage.inputLasName(user.getLastName());
 
-        applyPage.inputCellPhoneField();
-
-
-
-
-
-
-
+        applyPage.inputCellPhoneField(user.getPhone());
     }
-
-
-
-
-
 }

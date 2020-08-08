@@ -31,29 +31,29 @@ public class ApplyPage extends BasePage {
     @FindBy(css = ".sc-bdVaJa.sc-bxivhb.laYMsi")
     private List<WebElement> requiredFields;
 
+    @FindBy(css = ".sc-bdVaJa.sc-bxivhb.cGxaMp")
+    private WebElement provideAValidEmail;
 
 
 
-
-
-    public void inputEmail() {
-        emailField.sendKeys("entsova@gmail.com");
+    public void inputEmail(String email) {
+        emailField.sendKeys(email);
     }
 
-    public void inputPassword() {
-        passwordField.sendKeys("ABC123");
+    public void inputPassword(String password) {
+        passwordField.sendKeys(password);
     }
 
-    public void inputFirstName() {
-        firstNameField.sendKeys("John");
+    public void inputFirstName(String firstName) {
+        firstNameField.sendKeys(firstName);
     }
 
-    public void inputLasName() {
-        lastNameField.sendKeys("Smith");
+    public void inputLasName(String lastName) {
+        lastNameField.sendKeys(lastName);
     }
 
-    public void inputCellPhoneField() {
-        cellPhoneField.sendKeys("123-456-7890");
+    public void inputCellPhoneField(String phone) {
+        cellPhoneField.sendKeys(phone);
     }
 
 
@@ -98,14 +98,8 @@ public class ApplyPage extends BasePage {
     }
 
 
-
-
-
-
-
-
-
-
-
-
+    public String provideAValidEmail() {
+        String result = provideAValidEmail.getText();
+        return result;
+    }
 }

@@ -36,16 +36,5 @@ public class ForthTest extends BaseTest {
         Assert.assertEquals(expectedResult, actualResult);
 
         System.out.println(actualResult);
-
-
-
-
-
-
-
-
-
-
-
     }
 }

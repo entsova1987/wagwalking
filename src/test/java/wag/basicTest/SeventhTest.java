@@ -52,23 +52,5 @@ public class SeventhTest extends BaseTest {
         WebElement signUpLink = driver.findElement(By.cssSelector("a[data-testid=\"signup-link\"]"));
 
         signUpLink.click();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }

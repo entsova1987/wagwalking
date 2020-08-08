@@ -44,13 +44,4 @@ public class RequiredFieldTest extends BaseTest {
 
         Assert.assertEquals("required", cellPhoneError);
     }
-
-
-
-
-
-
-
-
-
 }

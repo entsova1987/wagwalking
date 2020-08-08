@@ -36,22 +36,5 @@ public class SixthTest extends BaseTest {
         Assert.assertEquals(expectedResult, emailError);
 
         Assert.assertEquals(expectedResult, passwordError);
-
-
-
-
-
-
-
-
-
-
-
     }
-
-
-
-
-
-
 }

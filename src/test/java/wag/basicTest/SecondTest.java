@@ -33,11 +33,4 @@ public class SecondTest extends BaseTest {
 
         fields.get(4).sendKeys("7028869393");
     }
-
-
-
-
-
-
-
 }
